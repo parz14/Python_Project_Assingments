@@ -18,3 +18,5 @@ reg='[A-Za-z]+[\.]?[A-Za-z]*[0-9]*[@][a-z]+[\.][a-z]{3}'
 for i in range(2, row_count+1):
     match = re.findall(reg, ws["B{0}".format(i)].value )
     print(match)
+    
+    exit
